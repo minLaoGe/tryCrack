@@ -1,0 +1,5 @@
+requests
+scrapy
+lxml==5.3.0
+pycryptodome
+PyExecJS2
