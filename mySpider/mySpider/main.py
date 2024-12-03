@@ -1,8 +1,21 @@
 from scrapy.cmdline import execute
 
-def executeSpider(spider):
+def excutechinaair():
     execute('scrapy crawl chinaairtest'.split())
-def executenewspider():
-    execute('scrapy genspider qqmusic https://u6.y.qq.com/cgi-bin/musics.fcg'.split())
+
+def excuteQQmusic():
+    execute('scrapy crawl chinaairtest'.split())
+
+## start project
+def createQQMusciProject():
+    execute('scrapy startproject qqMusic'.split())
+
+## start qqmusciProject
+def qqMusicProject():
+    execute('scrapy genspider qqMusic www.qqmusic.com'.split())
+## meijutt
+def meijutttProject():
+    execute('scrapy crawl  meijuttt --loglevel DEBUG'.split())
+
 if __name__ == '__main__':
-    executenewspider()
+    meijutttProject()
